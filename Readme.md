@@ -6,7 +6,7 @@
 >*:port => 5*  
 >*}*
 
-##### В опцию Vagrantfile box.vm.provision добавлены комманды для автосборки RAID5:
+##### В опцию Vagrantfile *box.vm.provision* добавлены комманды для автосборки RAID5:
 
 1. создаём RAID5 из 4 дисков +1 spare:
 >*mdadm --create --verbose /dev/md0 --level=5 --raid-devices=4 /dev/sd[b-e] --spare-devices=1 /dev/sdf*  

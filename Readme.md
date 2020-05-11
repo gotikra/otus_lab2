@@ -75,7 +75,7 @@
 >   
 >Number   Major   Minor   RaidDevice State  
 >0       8       16        0      active sync   /dev/sdb  
->1       8       32        1      active sync   /dev/sdc 
+>1       8       32        1      active sync   /dev/sdc  
 >2       8       48        2      active sync   /dev/sdd  
 >5       8       64        3      active sync   /dev/sde  
 > 

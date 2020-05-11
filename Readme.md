@@ -1,17 +1,15 @@
 # ДЗ2.Работа с mdadm
 1.в Vagrantfile добавлен 5 диск
-*:sata5 => {*
-*:dfile => './ot5.vdi',*
-*:size => 250,*
-*:port => 5*
+*:sata5 => {*  
+*:dfile => './ot5.vdi',*  
+*:size => 250,*  
+*:port => 5*  
 *}*
 
 2. в опцию Vagrantfile box.vm.provision добавлены комманды для автосборки RAID5:
 
 2.1. создаём RAID5 из 5 дисков:
-
-*mdadm --create --verbose /dev/md0 --level=5 --raid-devices=5 /dev/sd[b-f]*
-*mdadm --create --verbose /dev/md0 --level=5 --raid-devices=4 /dev/sd[b-e] --spare-devices=1 /dev/sdf*
+*mdadm --create --verbose /dev/md0 --level=5 --raid-devices=4 /dev/sd[b-e] --spare-devices=1 /dev/sdf*  
 
 2.2. записываем конфигурацию в mdadm.conf
 

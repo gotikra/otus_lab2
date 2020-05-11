@@ -38,9 +38,9 @@
 
 >*for i in $(seq 1 5); do echo /dev/md0p$i /mnt/raid/part$i ext4  rw,user,exec 0 0 >> /etc/fstab; done*
 
-### Подготовлен bash-скрипт mdadm.sh, который можно запустить на поднятом образе, и создающий RAID5 из 4 дисков  +1 spare
+### Подготовлен bash-скрипт *mdadm.sh*, который можно запустить на поднятом образе, и создающий RAID5 из 4 дисков  +1 spare
 
-### Содержимое файла /etc/mdadm/mdadm.conf:
+### Содержимое файла */etc/mdadm/mdadm.conf*:
 
 >*DEVICE partitions*
 >*ARRAY /dev/md0 metadata=1.2 spares=2 name=otuslinux:0* *UUID=63b046e6:b1c4b421:f7a4fc28:1f004106*

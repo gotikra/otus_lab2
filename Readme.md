@@ -13,9 +13,9 @@
 
 2. записываем конфигурацию в mdadm.conf
 
->*mkdir /etc/mdadm*
->*echo "DEVICE partitions" > /etc/mdadm/mdadm.conf*
->*mdadm --detail --scan >> /etc/mdadm/mdadm.conf*
+>*mkdir /etc/mdadm*  
+>*echo "DEVICE partitions" > /etc/mdadm/mdadm.conf*  
+>*mdadm --detail --scan >> /etc/mdadm/mdadm.conf*  
 
 3. создаём файловую систему поверх созданного raid. таблица разделов gpt, 5 равных разделов с файловой системой xfs
 

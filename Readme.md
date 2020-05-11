@@ -1,5 +1,5 @@
 # ДЗ2.Работа с mdadm
-1.в Vagrantfile добавлен 5 диск
+1.в Vagrantfile добавлен 5 диск  
 *:sata5 => {*  
 *:dfile => './ot5.vdi',*  
 *:size => 250,*  

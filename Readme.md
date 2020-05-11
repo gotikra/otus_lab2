@@ -48,37 +48,37 @@
 
 5.вывод комманды *mdadm -D /dev/md0* после перезагрузки паоднятой виртуальной машины:
 
->/dev/md0:
->           Version : 1.2
->    Creation Time : Mon May 11 08:50:49 2020
->        Raid Level : raid5
->        Array Size : 761856 (744.00 MiB 780.14 MB)
->     Used Dev Size : 253952 (248.00 MiB 260.05 MB)
->      Raid Devices : 4
->     Total Devices : 5
->       Persistence : Superblock is persistent
+>/dev/md0:  
+>           Version : 1.2  
+>    Creation Time : Mon May 11 08:50:49 2020  
+>        Raid Level : raid5  
+>        Array Size : 761856 (744.00 MiB 780.14 MB)  
+>     Used Dev Size : 253952 (248.00 MiB 260.05 MB)  
+>      Raid Devices : 4  
+>     Total Devices : 5  
+>       Persistence : Superblock is persistent  
+>  
+>       Update Time : Mon May 11 08:53:50 2020  
+>             State : clean  
+>    Active Devices : 4  
+>   Working Devices : 5  
+>    Failed Devices : 0  
+>     Spare Devices : 1  
 >
->       Update Time : Mon May 11 08:53:50 2020
->             State : clean 
->    Active Devices : 4
->   Working Devices : 5
->    Failed Devices : 0
->     Spare Devices : 1
->
->            Layout : left-symmetric
->        Chunk Size : 512K
->
->Consistency Policy : resync
->
->              Name : otuslinux:0  (local to host otuslinux)
->              UUID : 63b046e6:b1c4b421:f7a4fc28:1f004106
->            Events : 23
-
->    Number   Major   Minor   RaidDevice State
->       0       8       16        0      active sync   /dev/sdb
->       1       8       32        1      active sync   /dev/sdc
->       2       8       48        2      active sync   /dev/sdd
->       5       8       64        3      active sync   /dev/sde
->
->       4       8       80        -      spare   /dev/sdf
+>            Layout : left-symmetric  
+>        Chunk Size : 512K  
+>  
+>Consistency Policy : resync  
+>  
+>              Name : otuslinux:0  (local to host otuslinux)  
+>              UUID : 63b046e6:b1c4b421:f7a4fc28:1f004106  
+>            Events : 23  
+>   
+>    Number   Major   Minor   RaidDevice State  
+>       0       8       16        0      active sync   /dev/sdb  
+>       1       8       32        1      active sync   /dev/sdc 
+>       2       8       48        2      active sync   /dev/sdd  
+>       5       8       64        3      active sync   /dev/sde  
+> 
+>       4       8       80        -      spare   /dev/sdf  
 >
